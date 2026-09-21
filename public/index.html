@@ -485,8 +485,10 @@
     if (id === null || (id && SECTIONS.indexOf(id) === -1)) return;
     a.addEventListener('click', function (e) {
       e.preventDefault();
-      scrollToSection(id, true);
+      var mm = document.getElementById('mobile-menu');
+      if (mm) mm.setAttribute('data-open', 'false');
       try { history.pushState(null, '', href); } catch (err) {}
+      requestAnimationFrame(function () { requestAnimationFrame(function () { scrollToSection(id, true); }); });
     });
   });
   window.addEventListener('popstate', function () {
