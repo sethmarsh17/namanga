@@ -65,6 +65,9 @@
     [data-gallery] { grid-auto-rows: 150px !important; }
     input { font-size: 16px !important; } /* prevents iOS auto-zoom on focus */
     [data-nav-donate] { padding: 9px 16px !important; font-size: 13px !important; }
+    [data-nav-inner] { padding: 10px 14px !important; gap: 10px !important; }
+    [data-nav-right] { gap: 10px !important; }
+    [data-nav-logo] { height: 32px !important; }
   }
   @media (prefers-reduced-motion: reduce) { [data-hero-in], [data-hero-img], [data-seal], [data-seal-float] { animation: none !important; } [data-stagger] { opacity: 1 !important; transform: none !important; } }
   [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.22,1,.36,1); }
@@ -81,11 +84,11 @@
 
   <!-- NAV -->
   <div style="position: sticky; top: 0; z-index: 50; background: rgba(250,246,238,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(14,68,41,0.12);">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
-      <a href="/" style="display: flex; align-items: center; gap: 12px;">
-        <img src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png" alt="Namanga Hope Center" style="height: 40px; width: auto;">
+    <div data-nav-inner style="max-width: 1200px; margin: 0 auto; padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+      <a href="/" style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 auto;">
+        <img data-nav-logo src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png" alt="Namanga Hope Center" style="height: 40px; width: auto; max-width: 100%; object-fit: contain; object-position: left center;">
       </a>
-      <div style="display: flex; align-items: center; gap: 20px;">
+      <div data-nav-right style="display: flex; align-items: center; gap: 20px; flex: none;">
         <div data-nav-links style="align-items: center; gap: 24px; font-size: 15px; font-weight: 600;">
           <a href="/about" style="color: #22302A;">About</a>
           <a href="/help" style="color: #22302A;">How We Help</a>
@@ -95,8 +98,8 @@
           <a href="/growing" style="color: #22302A;">Growing</a>
           <a href="/contact" style="color: #22302A;">Contact</a>
         </div>
-        <a href="https://hope4kajiado.networkforgood.com/projects/231046-namanga-hope-center" target="_blank" rel="noopener" data-nav-donate style="background: #E4A11B; color: #0E4429; font-weight: 800; font-size: 14px; padding: 11px 22px; border-radius: 999px; box-shadow: 0 6px 18px rgba(228,161,27,0.35);">Donate</a>
-        <div data-nav-burger id="nav-burger" role="button" tabindex="0" aria-label="Menu" style="width: 44px; height: 44px; border-radius: 12px; border: 1.5px solid rgba(14,68,41,0.18); background: #fff; align-items: center; justify-content: center; flex-direction: column; gap: 5px; cursor: pointer;">
+        <a href="https://hope4kajiado.networkforgood.com/projects/231046-namanga-hope-center" target="_blank" rel="noopener" data-nav-donate style="flex: none; white-space: nowrap; background: #E4A11B; color: #0E4429; font-weight: 800; font-size: 14px; padding: 11px 22px; border-radius: 999px; box-shadow: 0 6px 18px rgba(228,161,27,0.35);">Donate</a>
+        <div data-nav-burger id="nav-burger" role="button" tabindex="0" aria-label="Menu" style="flex: none; width: 44px; height: 44px; border-radius: 12px; border: 1.5px solid rgba(14,68,41,0.18); background: #fff; align-items: center; justify-content: center; flex-direction: column; gap: 5px; cursor: pointer;">
           <span style="width: 20px; height: 2px; background: #0E4429; border-radius: 2px;"></span><span style="width: 20px; height: 2px; background: #0E4429; border-radius: 2px;"></span><span style="width: 20px; height: 2px; background: #0E4429; border-radius: 2px;"></span>
         </div>
       </div>
