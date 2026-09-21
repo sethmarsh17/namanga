@@ -1,0 +1,11 @@
+{
+  // Cloudflare Worker config — static site served from ./public
+  // Deployed by Workers Builds on push to main (deploy command: npx wrangler deploy)
+  "name": "namanga",
+  "compatibility_date": "2026-09-21",
+  "assets": {
+    "directory": "./public",
+    // serve index.html for clean section URLs like /about, /give, /contact
+    "not_found_handling": "single-page-application"
+  }
+}
