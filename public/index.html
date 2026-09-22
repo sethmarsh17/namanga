@@ -14,7 +14,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://namangahopecenter.org/images/og-card.png">
-<link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png">
+<link rel="icon" type="image/png" href="/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -28,6 +28,7 @@
   @keyframes nhcUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
   @keyframes nhcPop { from { opacity: 0; transform: scale(.7) rotate(-8deg); } to { opacity: 1; transform: none; } }
   @keyframes nhcFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+  @keyframes nhcPulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.55; transform: scale(0.8); } }
   [data-hero-in] { animation: nhcUp .9s cubic-bezier(.22,1,.36,1) both; }
   [data-hero-in="1"] { animation-delay: .05s; } [data-hero-in="2"] { animation-delay: .18s; } [data-hero-in="3"] { animation-delay: .3s; } [data-hero-in="4"] { animation-delay: .42s; }
   [data-hero-img] { animation: nhcUp 1s .2s cubic-bezier(.22,1,.36,1) both; }
@@ -86,7 +87,7 @@
   <div style="position: sticky; top: 0; z-index: 50; background: rgba(250,246,238,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(14,68,41,0.12);">
     <div data-nav-inner style="max-width: 1200px; margin: 0 auto; padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
       <a href="/" style="display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1 1 auto;">
-        <img data-nav-logo src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png" alt="Namanga Hope Center" style="height: 40px; width: auto; max-width: 100%; object-fit: contain; object-position: left center;">
+        <img data-nav-logo src="/images/logo.png" alt="Namanga Hope Center" style="height: 40px; width: auto; max-width: 100%; object-fit: contain; object-position: left center;">
       </a>
       <div data-nav-right style="display: flex; align-items: center; gap: 20px; flex: none;">
         <div data-nav-links style="align-items: center; gap: 24px; font-size: 15px; font-weight: 600;">
@@ -122,6 +123,14 @@
         <div data-hero-in="1" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(23,104,60,0.08); color: #17683C; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 14px; border-radius: 999px;">
           <span style="width: 7px; height: 7px; border-radius: 50%; background: #E4A11B;"></span> Namanga, Kenya
         </div>
+        <a href="/building-campaign#progress" style="display: flex; align-items: center; gap: 14px; margin-top: 18px; max-width: 460px; background: #0E4429; color: #fff; border-radius: 16px; padding: 10px 14px 10px 10px; box-shadow: 0 12px 30px rgba(14,68,41,0.25); border: 1px solid rgba(228,161,27,0.4); -webkit-font-smoothing: antialiased; transform: translateZ(0);">
+          <div style="width: 64px; height: 64px; border-radius: 12px; overflow: hidden; flex-shrink: 0;"><img src="/images/progress-foundation.jpg" alt="Foundation trenches being dug" style="width: 100%; height: 100%; object-fit: cover; display: block;"></div>
+          <div style="flex: 1; min-width: 0;">
+            <div style="display: flex; align-items: center; gap: 7px; font-size: 11px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #F6D98A;"><span style="width: 7px; height: 7px; border-radius: 50%; background: #E4A11B; animation: nhcPulse 1.6s ease-in-out infinite;"></span> Building campaign · In progress</div>
+            <div style="font-weight: 700; font-size: 15px; line-height: 1.3; margin-top: 3px;">Groundwork has started — see the foundation going in</div>
+          </div>
+          <span style="color: #E4A11B; font-weight: 800; font-size: 18px;">→</span>
+        </a>
         <h1 data-hero-in="2" data-hero-title style="font-family: 'Spectral', serif; font-weight: 800; color: #0E4429; font-size: 58px; line-height: 1.04; margin: 22px 0 0; letter-spacing: -0.01em; text-wrap: balance;">Empowering lives, igniting futures in the heart of Africa.</h1>
         <p data-hero-in="3" style="color: #52606A; font-size: 19px; line-height: 1.6; margin: 22px 0 0; max-width: 520px;">A gospel-centered home of hope for orphans and vulnerable children — meeting basic needs, opening doors to education and health, and growing a community that lasts.</p>
         <div data-hero-in="4" style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px;">
@@ -135,7 +144,7 @@
         </div>
         <!-- Gold seal -->
         <div data-seal style="position: absolute; left: -26px; bottom: -26px; width: 168px; height: 168px; border-radius: 50%; background: #FAF6EE; border: 3px solid #E4A11B; box-shadow: 0 0 0 7px #FAF6EE, 0 0 0 9px rgba(228,161,27,0.35), 0 18px 40px rgba(14,68,41,0.22); display: flex; align-items: center; justify-content: center;">
-          <img data-seal-float src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png" alt="Namanga Hope Center" style="width: 108px; height: auto;">
+          <img data-seal-float src="/images/logo.png" alt="Namanga Hope Center" style="width: 108px; height: auto;">
           <svg viewBox="0 0 200 200" style="position: absolute; inset: 0; width: 100%; height: 100%;">
             <defs><path id="sealTop" d="M 30 100 A 70 70 0 0 1 170 100"></path><path id="sealBot" d="M 170 100 A 70 70 0 0 1 30 100"></path></defs>
             <text font-family="Libre Franklin, sans-serif" font-size="11" font-weight="800" letter-spacing="2.6" fill="#0E4429"><textPath href="#sealTop" startOffset="50%" text-anchor="middle">NAMANGA · KENYA</textPath></text>
@@ -150,17 +159,17 @@
   <div data-anim style="max-width: 1120px; margin: 70px auto 0; padding: 0 28px;">
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px;">
       <div data-stagger data-card style="background: #fff; border: 1px solid rgba(14,68,41,0.1); border-radius: 20px; padding: 30px;">
-        <img src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/664bad8b7fb03fe81190f962_type-of-helping-icon-06.svg" alt="" style="height: 52px;">
+        <img src="/images/icon-educational.svg" alt="" style="height: 52px;">
         <h3 style="font-family: 'Spectral', serif; font-size: 22px; margin: 16px 0 6px; color: #0E4429;">Educational</h3>
         <p style="font-size: 15px; line-height: 1.6; color: #52606A; margin: 0;">School sponsorships, educational materials, and after-school tutoring so children can break the cycle of poverty.</p>
       </div>
       <div data-stagger data-card style="background: #fff; border: 1px solid rgba(14,68,41,0.1); border-radius: 20px; padding: 30px;">
-        <img src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/664bad8b7fb03fe81190f963_type-of-helping-icon-03.svg" alt="" style="height: 52px;">
+        <img src="/images/icon-spiritual.svg" alt="" style="height: 52px;">
         <h3 style="font-family: 'Spectral', serif; font-size: 22px; margin: 16px 0 6px; color: #0E4429;">Spiritual</h3>
         <p style="font-size: 15px; line-height: 1.6; color: #52606A; margin: 0;">Helping children grow in faith in Jesus Christ within a loving, nurturing community.</p>
       </div>
       <div data-stagger data-card style="background: #fff; border: 1px solid rgba(14,68,41,0.1); border-radius: 20px; padding: 30px;">
-        <img src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/664bad8b7fb03fe81190f961_type-of-helping-icon-04.svg" alt="" style="height: 52px;">
+        <img src="/images/icon-nourishment.svg" alt="" style="height: 52px;">
         <h3 style="font-family: 'Spectral', serif; font-size: 22px; margin: 16px 0 6px; color: #0E4429;">Nourishment</h3>
         <p style="font-size: 15px; line-height: 1.6; color: #52606A; margin: 0;">A healthy diet, clean water, and safe shelter — the foundation every child deserves.</p>
       </div>
@@ -347,11 +356,11 @@
     <div data-band style="max-width: 1120px; margin: 0 auto; padding: 76px 28px;">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 48px; align-items: center;">
         <div>
-          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(228,161,27,0.18); border: 1px solid rgba(228,161,27,0.5); color: #F6D98A; font-weight: 700; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 13px; border-radius: 999px;">Growing Together</div>
+          <div style="display: inline-flex; align-items: center; gap: 8px; background: rgba(228,161,27,0.18); border: 1px solid rgba(228,161,27,0.5); color: #F6D98A; font-weight: 700; font-size: 12.5px; letter-spacing: 0.08em; text-transform: uppercase; padding: 6px 13px; border-radius: 999px;">Growing Together · Groundwork underway</div>
           <h2 data-h2 style="font-family: 'Spectral', serif; font-size: 42px; font-weight: 800; color: #fff; line-height: 1.08; margin: 16px 0 0;">From two acres to a whole community.</h2>
-          <p style="font-size: 17px; line-height: 1.65; color: rgba(255,255,255,0.85); margin: 16px 0 0;">We've secured land near Namanga town. Next comes the building — a home, a school, a kitchen, and a place to worship — and a growing family of supporters who make it possible.</p>
+          <p style="font-size: 17px; line-height: 1.65; color: rgba(255,255,255,0.85); margin: 16px 0 0;">The land is secured and the building has begun. The perimeter wall is marked out, materials are arriving, and the foundation is being dug. Next: a home, a school, a kitchen, and a place to worship.</p>
           <div style="display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px;">
-            <a href="https://hope4kajiado.networkforgood.com/projects/231046-namanga-hope-center" target="_blank" rel="noopener" style="background: #E4A11B; color: #0E4429; font-weight: 800; font-size: 15px; padding: 14px 26px; border-radius: 999px; box-shadow: 0 10px 26px rgba(228,161,27,0.4);">Give to the building campaign →</a>
+            <a href="/building-campaign#progress" style="background: #E4A11B; color: #0E4429; font-weight: 800; font-size: 15px; padding: 14px 26px; border-radius: 999px; box-shadow: 0 10px 26px rgba(228,161,27,0.4);">See the progress →</a>
             <a href="/building-campaign" style="background: rgba(255,255,255,0.12); border: 1.5px solid #E4A11B; color: #F6D98A; font-weight: 800; font-size: 15px; padding: 14px 24px; border-radius: 999px;">Join the community — learn more →</a>
           </div>
         </div>
@@ -362,9 +371,9 @@
             <div style="font-size: 13px; color: rgba(255,255,255,0.72); margin-top: 6px; line-height: 1.45;">Secured near Namanga town, 2026</div>
           </div>
           <div data-stagger style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: 18px; padding: 22px;">
-            <div style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #F6D98A;">Next</div>
-            <div style="font-family: 'Spectral', serif; font-size: 30px; font-weight: 800; color: #F6D98A; margin-top: 8px; line-height: 1.1;">Fence &amp; utilities</div>
-            <div style="font-size: 13px; color: rgba(255,255,255,0.72); margin-top: 6px; line-height: 1.45;">First building milestone</div>
+            <div style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #F6D98A;">Now</div>
+            <div style="font-family: 'Spectral', serif; font-size: 30px; font-weight: 800; color: #F6D98A; margin-top: 8px; line-height: 1.1;">Perimeter wall</div>
+            <div style="font-size: 13px; color: rgba(255,255,255,0.72); margin-top: 6px; line-height: 1.45;">Foundation being dug, Sept 2026</div>
           </div>
           <div data-stagger style="background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.16); border-radius: 18px; padding: 22px;">
             <div style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase; color: #F6D98A;">Supporters</div>
@@ -392,7 +401,7 @@
           <a href="mailto:namangahopecenterkenya@gmail.com" style="display: flex; align-items: center; gap: 12px; color: #22302A; font-weight: 600;"><span style="width: 40px; height: 40px; border-radius: 50%; background: rgba(23,104,60,0.1); display: flex; align-items: center; justify-content: center;">✉️</span>namangahopecenterkenya@gmail.com</a>
           <a href="tel:+254721560008" style="display: flex; align-items: center; gap: 12px; color: #22302A; font-weight: 600;"><span style="width: 40px; height: 40px; border-radius: 50%; background: rgba(23,104,60,0.1); display: flex; align-items: center; justify-content: center;">📞</span>+254 721 560008</a>
           <a href="https://wa.me/254721560008?text=Hello%20Namanga%20Hope%20Center" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; color: #22302A; font-weight: 600;"><span style="width: 40px; height: 40px; border-radius: 50%; background: rgba(37,211,102,0.14); display: flex; align-items: center; justify-content: center;">💬</span>WhatsApp us</a>
-          <a href="https://www.facebook.com/NamangaHopeCenter" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; color: #22302A; font-weight: 600;"><span style="width: 40px; height: 40px; border-radius: 50%; background: rgba(23,104,60,0.1); display: flex; align-items: center; justify-content: center;"><img src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/664bad8b7fb03fe81190f969_footer-social%20-icon-02.svg" alt="Facebook" style="height: 18px;"></span>Facebook — @NamangaHopeCenter</a>
+          <a href="https://www.facebook.com/NamangaHopeCenter" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 12px; color: #22302A; font-weight: 600;"><span style="width: 40px; height: 40px; border-radius: 50%; background: rgba(23,104,60,0.1); display: flex; align-items: center; justify-content: center;"><img src="/images/icon-facebook.svg" alt="Facebook" style="height: 18px;"></span>Facebook — @NamangaHopeCenter</a>
           <div style="display: flex; align-items: center; gap: 12px; color: #22302A; font-weight: 600;"><span style="width: 40px; height: 40px; border-radius: 50%; background: rgba(23,104,60,0.1); display: flex; align-items: center; justify-content: center;">📍</span>Namanga, Kenya</div>
         </div>
       </div>
@@ -426,7 +435,7 @@
     <div style="max-width: 1120px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; align-items: start;">
       <div style="display: flex; align-items: center; gap: 16px;">
         <div style="width: 64px; height: 64px; border-radius: 50%; background: #FAF6EE; border: 2px solid #E4A11B; box-shadow: 0 0 0 4px rgba(228,161,27,0.3); display: flex; align-items: center; justify-content: center; flex: none;">
-          <img src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png" alt="" style="width: 44px; height: auto;">
+          <img src="/images/logo.png" alt="" style="width: 44px; height: auto;">
         </div>
         <div style="line-height: 1.1;">
           <div style="font-family: 'Spectral', serif; font-weight: 800; font-size: 19px; color: #fff;">Namanga Hope Center</div>

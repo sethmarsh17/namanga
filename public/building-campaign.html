@@ -14,7 +14,7 @@
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://namangahopecenter.org/images/og-card.png">
-<link rel="icon" type="image/png" href="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png">
+<link rel="icon" type="image/png" href="/images/logo.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500;600;700;800&family=Libre+Franklin:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -26,6 +26,7 @@
   a:hover { color: #E4A11B; }
   img.slot { width: 100%; height: 100%; object-fit: cover; display: block; }
   @keyframes nhcUp { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: none; } }
+  @keyframes nhcPulse { 0%,100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.55; transform: scale(0.8); } }
   [data-in] { animation: nhcUp .9s cubic-bezier(.22,1,.36,1) both; }
   [data-in="1"] { animation-delay: .05s; } [data-in="2"] { animation-delay: .18s; } [data-in="3"] { animation-delay: .3s; } [data-in="4"] { animation-delay: .45s; }
   [data-reveal] { opacity: 0; transform: translateY(28px); transition: opacity .8s ease, transform .8s cubic-bezier(.22,1,.36,1); }
@@ -46,7 +47,7 @@
 <div style="font-family: 'Libre Franklin', sans-serif; color: #22302A; background: #FAF6EE; min-height: 100vh; overflow-x: hidden;">
   <div style="position: sticky; top: 0; z-index: 50; background: rgba(250,246,238,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(14,68,41,0.12);">
     <div data-pad style="max-width: 1200px; margin: 0 auto; padding: 12px 28px; display: flex; align-items: center; justify-content: space-between; gap: 20px;">
-      <a href="/" style="min-width: 0; flex: 1 1 auto;"><img data-nav-logo src="https://cdn.prod.website-files.com/664bad8b7fb03fe81190f8f8/666744fbc6851cdb981dba10_Group%201%20(2).png" alt="Namanga Hope Center" style="height: 40px; width: auto; max-width: 100%; object-fit: contain; object-position: left center;"></a>
+      <a href="/" style="min-width: 0; flex: 1 1 auto;"><img data-nav-logo src="/images/logo.png" alt="Namanga Hope Center" style="height: 40px; width: auto; max-width: 100%; object-fit: contain; object-position: left center;"></a>
       <div style="display: flex; align-items: center; gap: 18px; flex: none;">
         <a href="/" style="color: #22302A; font-weight: 600; font-size: 15px;">←<span data-back-label> Back to main site</span></a>
         <a href="https://hope4kajiado.networkforgood.com/projects/231046-namanga-hope-center" target="_blank" rel="noopener" style="flex: none; white-space: nowrap; background: #E4A11B; color: #0E4429; font-weight: 800; font-size: 14px; padding: 11px 22px; border-radius: 999px; box-shadow: 0 6px 18px rgba(228,161,27,0.35);">Donate</a>
@@ -62,19 +63,61 @@
     <div data-pad style="position: relative; max-width: 1200px; margin: 0 auto; padding: 80px 28px; width: 100%; box-sizing: border-box;">
       <div style="max-width: 620px;">
         <div data-in="1" style="display: inline-flex; align-items: center; gap: 8px; background: rgba(228,161,27,0.18); border: 1px solid rgba(228,161,27,0.5); color: #F6D98A; font-weight: 700; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; padding: 7px 14px; border-radius: 999px;">
-          <span style="width: 7px; height: 7px; border-radius: 50%; background: #E4A11B;"></span> Building Campaign — Coming Soon
+          <span style="width: 8px; height: 8px; border-radius: 50%; background: #E4A11B; box-shadow: 0 0 0 4px rgba(228,161,27,0.3);"></span> Building Campaign — In Progress
         </div>
-        <h1 data-in="2" data-title style="font-family: 'Spectral', serif; font-weight: 800; color: #fff; font-size: 58px; line-height: 1.04; margin: 22px 0 0; letter-spacing: -0.01em; text-wrap: balance;">The land is ours. <span style="color: #E4A11B;">The building begins.</span></h1>
-        <p data-in="3" style="color: rgba(255,255,255,0.9); font-size: 19px; line-height: 1.6; margin: 22px 0 0; max-width: 540px;">Two acres near Namanga town are secured and titled. We're finalizing designs and costs for a home, school, kitchen, cafeteria, and worship center. The full campaign page launches here.</p>
+        <h1 data-in="2" data-title style="font-family: 'Spectral', serif; font-weight: 800; color: #fff; font-size: 58px; line-height: 1.04; margin: 22px 0 0; letter-spacing: -0.01em; text-wrap: balance;">Ground is broken. <span style="color: #E4A11B;">The building has begun.</span></h1>
+        <p data-in="3" style="color: rgba(255,255,255,0.9); font-size: 19px; line-height: 1.6; margin: 22px 0 0; max-width: 540px;">Two acres near Namanga town are secured and titled. The community has marked out the perimeter wall, materials are arriving on site, and crews are digging the foundation trenches right now.</p>
         <div data-in="4" style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px;">
           <a href="https://hope4kajiado.networkforgood.com/projects/231046-namanga-hope-center" target="_blank" rel="noopener" style="background: #E4A11B; color: #0E4429; font-weight: 800; font-size: 16px; padding: 16px 30px; border-radius: 999px; box-shadow: 0 10px 26px rgba(228,161,27,0.4);">Give an early gift →</a>
-          <a href="#notify" style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.4); color: #fff; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px;">Notify me at launch</a>
+          <a href="#progress" style="background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.4); color: #fff; font-weight: 700; font-size: 16px; padding: 16px 28px; border-radius: 999px;">See the progress ↓</a>
         </div>
       </div>
     </div>
   </div>
 
-  <div data-anim data-pad style="max-width: 1120px; margin: 70px auto 0; padding: 0 28px;">
+  <div id="progress" data-anim data-pad style="max-width: 1120px; margin: 70px auto 0; padding: 0 28px; scroll-margin-top: 80px;">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px;">
+      <div style="max-width: 600px;">
+        <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C4622D;"><span style="width: 8px; height: 8px; border-radius: 50%; background: #C4622D; animation: nhcPulse 1.6s ease-in-out infinite;"></span> Where we are now</div>
+        <h2 style="font-family: 'Spectral', serif; font-size: 38px; font-weight: 800; color: #0E4429; line-height: 1.08; margin: 12px 0 0;">Groundwork is underway.</h2>
+        <p style="font-size: 16.5px; line-height: 1.6; color: #52606A; margin: 12px 0 0;">Phase 0 started in September 2026. Here's what's happening on the land this month.</p>
+      </div>
+      <div style="font-size: 13px; color: #8A8271;">Updated September 2026</div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px; margin-top: 30px;">
+      <div data-stagger style="border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid rgba(14,68,41,0.1); display: flex; flex-direction: column;">
+        <div style="height: 260px;"><img class="slot" src="/images/progress-perimeter.jpg" alt="The community walking the marked perimeter line" loading="lazy"></div>
+        <div style="padding: 20px 22px 24px;">
+          <div style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #17683C;">Step 1 · Done</div>
+          <h3 style="font-family: 'Spectral', serif; font-size: 21px; font-weight: 800; color: #0E4429; margin: 6px 0 0;">Perimeter marked out</h3>
+          <p style="font-size: 14.5px; line-height: 1.55; color: #52606A; margin: 8px 0 0;">Richard walked the community through the plan and the wall line was chalked across the full two acres.</p>
+        </div>
+      </div>
+      <div data-stagger style="border-radius: 20px; overflow: hidden; background: #fff; border: 1px solid rgba(14,68,41,0.1); display: flex; flex-direction: column;">
+        <div style="height: 260px;"><img class="slot" src="/images/progress-foundation.jpg" alt="Foundation trenches being dug" loading="lazy"></div>
+        <div style="padding: 20px 22px 24px;">
+          <div style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #C4622D;">Step 2 · Happening now</div>
+          <h3 style="font-family: 'Spectral', serif; font-size: 21px; font-weight: 800; color: #0E4429; margin: 6px 0 0;">Foundation trenches &amp; materials</h3>
+          <p style="font-size: 14.5px; line-height: 1.55; color: #52606A; margin: 8px 0 0;">Crews are digging the foundation for the perimeter wall while stone, cement and the water tank arrive on site.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 26px; background: #fff; border: 1px solid rgba(14,68,41,0.1); border-radius: 18px; padding: 22px 24px;">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap;">
+        <div style="font-weight: 800; color: #0E4429; font-size: 15px;">Phase 0 · Groundwork</div>
+        <div style="font-size: 13px; color: #8A8271;">1 of 5 steps complete</div>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 8px; margin-top: 14px;">
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="height: 6px; border-radius: 3px; background: #17683C;"></div><div style="font-size: 12.5px; font-weight: 700; color: #17683C; line-height: 1.35;">Wall line marked</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="height: 6px; border-radius: 3px; background: linear-gradient(90deg, #E4A11B 55%, rgba(14,68,41,0.1) 55%);"></div><div style="font-size: 12.5px; font-weight: 700; color: #C4622D; line-height: 1.35;">Foundation dug</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="height: 6px; border-radius: 3px; background: rgba(14,68,41,0.1);"></div><div style="font-size: 12.5px; font-weight: 700; color: #8A8271; line-height: 1.35;">Wall built</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="height: 6px; border-radius: 3px; background: rgba(14,68,41,0.1);"></div><div style="font-size: 12.5px; font-weight: 700; color: #8A8271; line-height: 1.35;">Water to site</div></div>
+        <div style="display: flex; flex-direction: column; gap: 8px;"><div style="height: 6px; border-radius: 3px; background: rgba(14,68,41,0.1);"></div><div style="font-size: 12.5px; font-weight: 700; color: #8A8271; line-height: 1.35;">Power to site</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div data-anim data-pad style="max-width: 1120px; margin: 80px auto 0; padding: 0 28px;">
     <div style="text-align: center; max-width: 620px; margin: 0 auto;">
       <div style="font-size: 13px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #C4622D;">The Plan</div>
       <h2 style="font-family: 'Spectral', serif; font-size: 38px; font-weight: 800; color: #0E4429; line-height: 1.08; margin: 12px 0 0;">Built in phases, one milestone at a time.</h2>
@@ -90,11 +133,11 @@
       </div>
       <div data-stagger data-card style="background: #fff; border: 1px solid rgba(14,68,41,0.1); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 10px;">
         <div style="display: flex; align-items: center; justify-content: space-between;">
-          <div style="width: 42px; height: 42px; border-radius: 50%; background: rgba(42,126,123,0.12); color: #2A7E7B; display: flex; align-items: center; justify-content: center; font-family: 'Spectral', serif; font-weight: 800; font-size: 18px;">0</div>
-          <span style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #2A7E7B;">Up next</span>
+          <div style="width: 42px; height: 42px; border-radius: 50%; background: rgba(228,161,27,0.16); color: #C4622D; display: flex; align-items: center; justify-content: center; font-family: 'Spectral', serif; font-weight: 800; font-size: 18px;">0</div>
+          <span style="font-size: 11.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; color: #C4622D;">In progress</span>
         </div>
         <h3 style="font-family: 'Spectral', serif; font-size: 22px; font-weight: 800; color: #0E4429; margin: 6px 0 0;">Groundwork</h3>
-        <p style="font-size: 14.5px; line-height: 1.55; color: #52606A; margin: 0;">Perimeter fence first, then water and electricity run to the whole site.</p>
+        <p style="font-size: 14.5px; line-height: 1.55; color: #52606A; margin: 0;">Perimeter wall underway — foundation being dug now. Water and electricity to the whole site follow.</p>
       </div>
       <div data-stagger data-card style="background: #fff; border: 1px solid rgba(14,68,41,0.1); border-radius: 20px; padding: 26px; display: flex; flex-direction: column; gap: 10px;">
         <div style="display: flex; align-items: center; justify-content: space-between;">
@@ -113,13 +156,13 @@
         <p style="font-size: 14.5px; line-height: 1.55; color: #52606A; margin: 0;">Classroom blocks and lodging for teachers and visiting volunteer teams.</p>
       </div>
     </div>
-    <p style="font-size: 13px; color: #8A8271; margin: 22px 0 0; text-align: center; font-style: italic;">Costs, timeline, and live progress will appear here once the contractor estimate is confirmed.</p>
+    <p style="font-size: 13px; color: #8A8271; margin: 22px 0 0; text-align: center; font-style: italic;">Detailed costs and timeline for Phases 1 and 2 will be posted once the contractor estimate is confirmed.</p>
   </div>
 
   <div id="notify" data-anim style="margin-top: 90px; background: linear-gradient(160deg, #0E4429, #17683C);">
     <div data-pad style="max-width: 640px; margin: 0 auto; padding: 70px 28px; text-align: center;">
-      <h2 style="font-family: 'Spectral', serif; font-size: 36px; font-weight: 800; color: #fff; line-height: 1.1; margin: 0;">Be first to know when we break ground.</h2>
-      <p style="font-size: 16.5px; line-height: 1.6; color: rgba(255,255,255,0.85); margin: 14px 0 0;">We'll email you when the campaign launches — and as each milestone is reached.</p>
+      <h2 style="font-family: 'Spectral', serif; font-size: 36px; font-weight: 800; color: #fff; line-height: 1.1; margin: 0;">Follow the build as it happens.</h2>
+      <p style="font-size: 16.5px; line-height: 1.6; color: rgba(255,255,255,0.85); margin: 14px 0 0;">We'll email you photos and updates as each milestone on the land is reached.</p>
       <div id="notify-done" style="display: none; margin-top: 28px; background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3); color: #fff; border-radius: 14px; padding: 18px; font-weight: 700;">💚 You're on the list. Thank you!</div>
       <div id="notify-form">
         <div style="display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; justify-content: center;">
@@ -159,7 +202,7 @@
       p.push({ email: email.value, at: Date.now() });
       localStorage.setItem('nhc_build_notify', JSON.stringify(p));
     } catch (e) {}
-    window.open('mailto:namangahopecenterkenya@gmail.com?subject=' + encodeURIComponent('Notify me at building campaign launch') + '&body=' + encodeURIComponent('Please add me to the launch list.\nEmail: ' + email.value), '_self');
+    window.open('mailto:namangahopecenterkenya@gmail.com?subject=' + encodeURIComponent('Building campaign updates') + '&body=' + encodeURIComponent('Please send me building updates.\nEmail: ' + email.value), '_self');
     document.getElementById('notify-form').style.display = 'none';
     document.getElementById('notify-done').style.display = 'block';
   }
